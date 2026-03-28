@@ -1,4 +1,4 @@
-# RAG Project
+# RAG Project (FastAPI + Streamlit)
 
 Simple Retrieval-Augmented Generation (RAG) application with a FastAPI backend and Streamlit frontend.
 
