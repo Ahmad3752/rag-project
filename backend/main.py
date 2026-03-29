@@ -56,3 +56,8 @@ async def ask_pdf(file: UploadFile = File(...), question: str = Form(...)):
             os.remove(file_path)
         except Exception:
             pass
+
+
+@app.get("/health", response_model=dict)
+def health():
+    return {"status": "ok"}

@@ -32,8 +32,8 @@ copy .env.example .env
 3. Run the backend (FastAPI / Uvicorn):
 
 ```bash
-cd backend
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
+# Run from the repository root so package imports work correctly
+uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 4. Run the frontend (Streamlit):

@@ -1,25 +1,25 @@
-# Core LangChain packages (let pip resolve)
+fastapi>=0.95.2
+uvicorn[standard]>=0.22.0
+python-multipart>=0.0.6
+pydantic>=1.10.2
+python-dotenv>=1.0.0
+
+# LangChain modular packages used in the codebase
 langchain>=0.1.0
+langchain-core>=0.1.0
 langchain-community>=0.0.38
 langchain-openai>=0.1.0
-langchain-text-splitters>=1.1.1
 langchain-huggingface>=0.1.2
+langchain-text-splitters>=1.1.1
 
-# Vector stores and embeddings
+# Embeddings / vectorstore
 faiss-cpu>=1.7.4
 sentence-transformers>=2.2.2
 
-# LLM API
-openai>=1.30.0
+# PDF loader and LLM API
+pypdf>=3.15.0
+openai>=1.0.0
 
-# PDF parsing and FastAPI extras
-pypdf
-python-multipart
-
-# Utilities
-python-dotenv>=1.0.0
-pydantic>=2.0.0
-
-# Web
-fastapi
-uvicorn
+# Frontend / tooling (streamlit used in frontend app)
+streamlit>=1.25.0
+requests>=2.31.0

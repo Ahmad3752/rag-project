@@ -1,3 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.DS_Store
+venv/
+*.egg-info/
+uploads/
+tmp*
+*.tmp
 # Python virtual environments
 .venv/
 venv/
